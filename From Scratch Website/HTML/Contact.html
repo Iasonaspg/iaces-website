@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Iaces Website</title>
+        <link rel="stylesheet" href="../CSS/w3.css">
+        <link rel="stylesheet" href="../CSS/Contact.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../Fontawesome/css/fontawesome-all.css">
+        <link rel="stylesheet" href="../CSS/Animate.css">
+    </head>
+    <body>
+        <header class="">
+            <div id="wrap">
+                <nav class="w3-bar w3-mobile">
+                    <img class="logo" src="../Imgs/logo2.png" alt="Iaces logo">
+                    <div class="menu-cont" onclick="iconchange()">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <a href="../index.html" class="w3-mobile link">Home</a>
+                    <a href="Team.html" class="w3-mobile link">Team</a>
+                    <a href="Events.html" class="w3-mobile link">Events</a>
+                    <a href="Contact.html" class="w3-mobile link">Contact</a>
+                </nav> 
+            </div>
+        </header>
+
+        <section>
+            <div class="wrapanimate">
+                <h1 id="animate">Contact Us</h1>
+            </div>
+            <div class="container">
+                <div class="information">
+                    <ul id="information-list">
+                        <li><i class="fa fa-home"></i> Auth, Faculty Of Engineering</li>
+                        <li><i class="fa fa-phone"></i> 2310231023</li>
+                        <li><i class="fa fa-envelope"></i> iaces.thessaloniki@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="form-wrap">
+                    <form action="../PHP/contact.php" method="POST">
+                        <p>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="val1">
+                            <span class="req1">Required</span>
+                        </p>
+                        <p>
+                            <label for="email">Email Address</label>
+                            <input type="text" name="email" id="email" class="val2">
+                            <span class="req2">Required</span>
+                            <span class="invalmail">Enter valid email address</span>
+                        </p>
+                        <p>
+                            <label for="telephone">Mobile Number</label>
+                            <input type="text" name="telephone" id="telephone" maxlength="10">
+                        </p>
+                        <p class="full">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" class="val3" maxlength="1000"></textarea>
+                            <span class="req3">Required</span>
+                        </p>
+                        <p class="flexy">
+                            <button>SUBMIT</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer-wrap">
+                <a href="https://www.facebook.com/iaces.thessaloniki/" target="_blank"><i class="fab fa-facebook-square" ></i></a>
+                <a href="https://www.linkedin.com/company/iaces-lc-thessaloniki/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/iaces_lcthessaloniki/?hl=el" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+    
+            <div id="copyrights">
+                <p>IACES LC Thessaloniki - Aristotle University of Thessaloniki</p>
+                <p>&copy; Made with <i class="fa fa-heart"></i></p>
+            </div>
+        </footer> 
+
+        
+        <script src="../JS/ResponsiveMenu.js"></script>
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous">
+        </script>
+        <script src="../JS/Contact.js"></script>
+    </body>
+</html>
